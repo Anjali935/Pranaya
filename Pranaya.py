@@ -65,10 +65,10 @@ def chatbot_response(text):
     res = getResponse(ints, intents)
     return res
 
-def generate_response(prompt):
-    # completions = 
-    message = "Hello my name is Narendra"
-    return message
+# def generate_response(prompt):
+    # # completions = 
+    # message = "Hello my name is Narendra"
+    # return message
 
 #Creating the chatbot interface
 st.title("chatBot : Streamlit + openAI")
@@ -88,7 +88,7 @@ def get_text():
 user_input = get_text()
 
 if user_input:
-    output = getResponse(user_input, intents)
+    output = chatbot_response(user_input)
     # store the output
     st.session_state.past.append(user_input)
     st.session_state.generated.append(output)
