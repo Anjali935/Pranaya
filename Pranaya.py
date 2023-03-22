@@ -88,7 +88,7 @@ def get_text():
 user_input = get_text()
 
 if user_input:
-    output = getResponse(user_input)
+    output = getResponse(user_input, intents)
     # store the output
     st.session_state.past.append(user_input)
     st.session_state.generated.append(output)
