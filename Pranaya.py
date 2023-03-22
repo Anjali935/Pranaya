@@ -4,6 +4,8 @@ lemmatizer = WordNetLemmatizer()
 import pickle
 import numpy as np
 
+nltk.download('punkt')
+
 import streamlit as st
 # pip install streamlit-chat
 from streamlit_chat import message
