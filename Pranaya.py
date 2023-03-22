@@ -5,6 +5,7 @@ import pickle
 import numpy as np
 
 nltk.download('punkt')
+nltk.download('wordnet')
 
 import streamlit as st
 # pip install streamlit-chat
